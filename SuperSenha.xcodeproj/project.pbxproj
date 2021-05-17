@@ -12,9 +12,10 @@
 		994151632651AF43006F2607 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994151622651AF43006F2607 /* ViewController.swift */; };
 		994151662651AF43006F2607 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994151642651AF43006F2607 /* Main.storyboard */; };
 		994151682651AF44006F2607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 994151672651AF44006F2607 /* Assets.xcassets */; };
-		9941516B2651AF44006F2607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994151692651AF44006F2607 /* LaunchScreen.storyboard */; };
 		994151762651AF45006F2607 /* SuperSenhaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994151752651AF45006F2607 /* SuperSenhaTests.swift */; };
 		994151812651AF45006F2607 /* SuperSenhaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994151802651AF45006F2607 /* SuperSenhaUITests.swift */; };
+		994151922651B0E6006F2607 /* DicasSenha.txt in Resources */ = {isa = PBXBuildFile; fileRef = 994151912651B0E5006F2607 /* DicasSenha.txt */; };
+		994151972651E7D0006F2607 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994151962651E7D0006F2607 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +42,6 @@
 		994151622651AF43006F2607 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		994151652651AF43006F2607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		994151672651AF44006F2607 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9941516A2651AF44006F2607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9941516C2651AF44006F2607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		994151712651AF45006F2607 /* SuperSenhaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperSenhaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		994151752651AF45006F2607 /* SuperSenhaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSenhaTests.swift; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		9941517C2651AF45006F2607 /* SuperSenhaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperSenhaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		994151802651AF45006F2607 /* SuperSenhaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSenhaUITests.swift; sourceTree = "<group>"; };
 		994151822651AF45006F2607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		994151912651B0E5006F2607 /* DicasSenha.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DicasSenha.txt; sourceTree = "<group>"; };
+		994151962651E7D0006F2607 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +101,13 @@
 		9941515D2651AF43006F2607 /* SuperSenha */ = {
 			isa = PBXGroup;
 			children = (
+				994151912651B0E5006F2607 /* DicasSenha.txt */,
 				9941515E2651AF43006F2607 /* AppDelegate.swift */,
 				994151602651AF43006F2607 /* SceneDelegate.swift */,
 				994151622651AF43006F2607 /* ViewController.swift */,
 				994151642651AF43006F2607 /* Main.storyboard */,
 				994151672651AF44006F2607 /* Assets.xcassets */,
-				994151692651AF44006F2607 /* LaunchScreen.storyboard */,
+				994151962651E7D0006F2607 /* Launch Screen.storyboard */,
 				9941516C2651AF44006F2607 /* Info.plist */,
 			);
 			path = SuperSenha;
@@ -231,9 +234,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9941516B2651AF44006F2607 /* LaunchScreen.storyboard in Resources */,
 				994151682651AF44006F2607 /* Assets.xcassets in Resources */,
 				994151662651AF43006F2607 /* Main.storyboard in Resources */,
+				994151972651E7D0006F2607 /* Launch Screen.storyboard in Resources */,
+				994151922651B0E6006F2607 /* DicasSenha.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,14 +306,6 @@
 				994151652651AF43006F2607 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		994151692651AF44006F2607 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9941516A2651AF44006F2607 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -446,7 +442,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.apendizado.swift.super.senha.udemy.SuperSenha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,7 +461,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.apendizado.swift.super.senha.udemy.SuperSenha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
