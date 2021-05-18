@@ -18,6 +18,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configNavigationBar()
+        lbTotalPasswords.inputAccessoryView = createToolBar()
+        lbTotalCaracters.inputAccessoryView = createToolBar()
     }
     
     func configNavigationBar() {
@@ -27,6 +29,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         navBar.titleTextAttributes = [.foregroundColor: UIColor.yellow]
         navBar.backgroundColor = .purple
         navBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
