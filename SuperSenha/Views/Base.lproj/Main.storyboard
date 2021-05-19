@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bQY-OG-pQV">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -184,7 +185,7 @@
                                     <segue destination="33A-df-5FA" kind="showDetail" id="rwC-Vq-1Vd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDs-nN-bfN">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDs-nN-bfN" customClass="IndicatorButton" customModule="SuperSenha" customModuleProvider="target">
                                 <rect key="frame" x="24" y="461" width="272" height="45"/>
                                 <color key="backgroundColor" red="0.62587505580000002" green="0.1914382875" blue="0.45745354890000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -200,10 +201,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="generate:" destination="5Ft-z7-4xn" eventType="touchUpInside" id="vFp-g6-e2C"/>
+                                    <action selector="generateListButton:" destination="5Ft-z7-4xn" eventType="touchUpInside" id="HQJ-rV-OkW"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="YR$33$$#5FDDE$34%" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i1j-mR-mt2">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i1j-mR-mt2">
                                 <rect key="frame" x="16" y="111" width="288" height="326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" red="0.62587505580000002" green="0.1914382875" blue="0.45745354890000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

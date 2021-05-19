@@ -10,21 +10,29 @@ import UIKit
 
 class IndicatorButton: UIButton {
     var originalButtonText: String?
-    var activityIndicator: UIActivityIndicatorView!
+    var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: .zero)
+    
+    
+    init() {
+        super.init(frame: .zero)
+        self.activityIndicator.color = .white
+    }
+    
+    required init?(coder: NSCoder) {
+super.init(coder: coder)
+        self.activityIndicator.color = .white
+    }
     
     func showLoading() {
         originalButtonText = self.titleLabel?.text
         self.setTitle("", for: .normal)
-        
-        if (activityIndicator == nil) {
-            activityIndicator = createActivityIndicator()
-        }
         showSpinning()
     }
     
     func hideLoading() {
         self.setTitle(originalButtonText, for: .normal)
         activityIndicator.stopAnimating()
+        activityIndicator.isHidden = true
     }
     
     private func createActivityIndicator() -> UIActivityIndicatorView {

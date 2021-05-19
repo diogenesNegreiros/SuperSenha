@@ -24,18 +24,20 @@ class PasswordViewController: UIViewController {
         title = "Total de senhas: \(numberOfPasswords)"
         passworGenerator = PasswordGenerator(numberOfCaracters: numberOfCaracters, useLowerLetters: useLowerLetters, useNumbers: useNumbers, useUperLetters: useUperLetters, useEspecialCaracters: useEspecialCaracters)
         
-   
         generatePasswords()
     }
     
-    @IBAction func generate(_ sender: UIButton) {
-        generatePasswords()
+    @IBAction func generateListButton(_ sender: IndicatorButton) {
+        
+        sender.showLoading()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+            self.generatePasswords()
+            sender.hideLoading()
+        }
     }
-    
-
     
     func generatePasswords() {
-    
+        
         textViewPassword.scrollRangeToVisible(_NSRange(location: 0, length: 0))
         textViewPassword.text = ""
         let passwords = passworGenerator.generate(total: numberOfPasswords)
