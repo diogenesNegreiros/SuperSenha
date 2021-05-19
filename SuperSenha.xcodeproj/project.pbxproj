@@ -15,6 +15,7 @@
 		994151762651AF45006F2607 /* SuperSenhaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994151752651AF45006F2607 /* SuperSenhaTests.swift */; };
 		994151812651AF45006F2607 /* SuperSenhaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994151802651AF45006F2607 /* SuperSenhaUITests.swift */; };
 		994151972651E7D0006F2607 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994151962651E7D0006F2607 /* Launch Screen.storyboard */; };
+		99981A07265571C1008412A3 /* IndicatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99981A06265571C1008412A3 /* IndicatorButton.swift */; };
 		99E8B70F2654750C009672E5 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E8B70E2654750C009672E5 /* PasswordViewController.swift */; };
 		99E8B71126547710009672E5 /* SecurityTipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E8B71026547710009672E5 /* SecurityTipsViewController.swift */; };
 		99E8B713265477C0009672E5 /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E8B712265477C0009672E5 /* PasswordGenerator.swift */; };
@@ -52,6 +53,7 @@
 		994151802651AF45006F2607 /* SuperSenhaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSenhaUITests.swift; sourceTree = "<group>"; };
 		994151822651AF45006F2607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		994151962651E7D0006F2607 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		99981A06265571C1008412A3 /* IndicatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorButton.swift; sourceTree = "<group>"; };
 		99E8B70E2654750C009672E5 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		99E8B71026547710009672E5 /* SecurityTipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityTipsViewController.swift; sourceTree = "<group>"; };
 		99E8B712265477C0009672E5 /* PasswordGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGenerator.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				99981A032654A64B008412A3 /* Controllers */,
 				99981A042654A66C008412A3 /* Views */,
 				99981A052654A692008412A3 /* Model */,
+				99981A08265583F5008412A3 /* Components */,
 				994151672651AF44006F2607 /* Assets.xcassets */,
 				9941516C2651AF44006F2607 /* Info.plist */,
 			);
@@ -159,6 +162,14 @@
 				99E8B712265477C0009672E5 /* PasswordGenerator.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		99981A08265583F5008412A3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				99981A06265571C1008412A3 /* IndicatorButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +305,7 @@
 				994151632651AF43006F2607 /* ViewController.swift in Sources */,
 				99E8B70F2654750C009672E5 /* PasswordViewController.swift in Sources */,
 				99E8B713265477C0009672E5 /* PasswordGenerator.swift in Sources */,
+				99981A07265571C1008412A3 /* IndicatorButton.swift in Sources */,
 				9941515F2651AF43006F2607 /* AppDelegate.swift in Sources */,
 				994151612651AF43006F2607 /* SceneDelegate.swift in Sources */,
 				99E8B71126547710009672E5 /* SecurityTipsViewController.swift in Sources */,

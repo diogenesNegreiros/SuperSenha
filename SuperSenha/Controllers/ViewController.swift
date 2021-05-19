@@ -15,18 +15,25 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var swLowerLetters: UISwitch!
     @IBOutlet weak var swNumbers: UISwitch!
     @IBOutlet weak var swEspecialCaracters: UISwitch!
-    @IBOutlet weak var generateIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var generateButton: IndicatorButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.configNavigationBar()
         lbTotalPasswords.inputAccessoryView = createToolBar()
         lbTotalCaracters.inputAccessoryView = createToolBar()
     }
     
+    @IBAction func tapGenButton(_ sender: Any) {
+        
+        generateButton.showLoading()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+            self.performSegue(withIdentifier: "segueListPasswords", sender: nil)
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       
+        
         let passwordViewController = segue.destination as! PasswordViewController
         
         if let numberOfCaracters = Int(lbTotalCaracters.text!) {
@@ -43,7 +50,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         passwordViewController.useEspecialCaracters = swEspecialCaracters.isOn
         
         view.endEditing(true)
-        generateIndicator.stopAnimating()
+        generateButton.hideLoading()
     }
     
     func configNavigationBar() {
@@ -75,6 +82,5 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         view.endEditing(true)
     }
-    
 }
 

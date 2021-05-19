@@ -13,5 +13,4 @@ class SecurityTipsViewController: UIViewController {
         dismiss(animated: true, completion: nil)
         
     }
-
 }
