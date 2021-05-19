@@ -256,7 +256,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ki0-ko-fCJ">
-                                <rect key="frame" x="16" y="57" width="288" height="475"/>
+                                <rect key="frame" x="16" y="57" width="288" height="451"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <attributedString key="attributedText">
                                     <fragment content="1. Escolha senhas fáceis de lembrar ">
@@ -422,24 +422,35 @@ Há diversos programas disponíveis que armazenam os dados de maneira segura e a
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T52-PL-zXi">
+                                <rect key="frame" x="260" y="516" width="44" height="30"/>
+                                <state key="normal" title="fechar">
+                                    <color key="titleColor" red="0.33333334329999997" green="0.1140197439" blue="0.074994517220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="close:" destination="33A-df-5FA" eventType="touchUpInside" id="tZB-3I-UhH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tty-LE-Kq9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="tty-LE-Kq9" firstAttribute="bottom" secondItem="T52-PL-zXi" secondAttribute="bottom" constant="2" id="1kV-3k-57W"/>
                             <constraint firstItem="BZd-f0-Zgk" firstAttribute="leading" secondItem="tty-LE-Kq9" secondAttribute="leading" constant="24" id="4MS-Nb-mmf"/>
                             <constraint firstItem="ki0-ko-fCJ" firstAttribute="leading" secondItem="tty-LE-Kq9" secondAttribute="leading" constant="16" id="5Ya-Oq-aep"/>
                             <constraint firstItem="BZd-f0-Zgk" firstAttribute="top" secondItem="tty-LE-Kq9" secondAttribute="top" constant="20" id="CsU-j7-Zy0"/>
+                            <constraint firstItem="tty-LE-Kq9" firstAttribute="trailing" secondItem="T52-PL-zXi" secondAttribute="trailing" constant="16" id="MpP-XF-oLN"/>
                             <constraint firstItem="ki0-ko-fCJ" firstAttribute="top" secondItem="BZd-f0-Zgk" secondAttribute="bottom" constant="16" id="OoT-o8-yax"/>
+                            <constraint firstItem="T52-PL-zXi" firstAttribute="top" secondItem="ki0-ko-fCJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Rz2-uD-ICD"/>
                             <constraint firstItem="tty-LE-Kq9" firstAttribute="trailing" secondItem="BZd-f0-Zgk" secondAttribute="trailing" constant="24" id="dl5-uw-aRu"/>
                             <constraint firstItem="tty-LE-Kq9" firstAttribute="trailing" secondItem="ki0-ko-fCJ" secondAttribute="trailing" constant="16" id="klO-t1-dp5"/>
-                            <constraint firstItem="tty-LE-Kq9" firstAttribute="bottom" secondItem="ki0-ko-fCJ" secondAttribute="bottom" constant="16" id="qf6-nU-HQ4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Rxx-fR-e1D"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HCA-O7-xJ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2524" y="92"/>
+            <point key="canvasLocation" x="2523.75" y="91.901408450704224"/>
         </scene>
         <!--Gerador de senhas-->
         <scene sceneID="rt2-Le-UfM">

@@ -14,7 +14,6 @@
 		994151682651AF44006F2607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 994151672651AF44006F2607 /* Assets.xcassets */; };
 		994151762651AF45006F2607 /* SuperSenhaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994151752651AF45006F2607 /* SuperSenhaTests.swift */; };
 		994151812651AF45006F2607 /* SuperSenhaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994151802651AF45006F2607 /* SuperSenhaUITests.swift */; };
-		994151922651B0E6006F2607 /* DicasSenha.txt in Resources */ = {isa = PBXBuildFile; fileRef = 994151912651B0E5006F2607 /* DicasSenha.txt */; };
 		994151972651E7D0006F2607 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994151962651E7D0006F2607 /* Launch Screen.storyboard */; };
 		99E8B70F2654750C009672E5 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E8B70E2654750C009672E5 /* PasswordViewController.swift */; };
 		99E8B71126547710009672E5 /* SecurityTipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E8B71026547710009672E5 /* SecurityTipsViewController.swift */; };
@@ -52,7 +51,6 @@
 		9941517C2651AF45006F2607 /* SuperSenhaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperSenhaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		994151802651AF45006F2607 /* SuperSenhaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSenhaUITests.swift; sourceTree = "<group>"; };
 		994151822651AF45006F2607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		994151912651B0E5006F2607 /* DicasSenha.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DicasSenha.txt; sourceTree = "<group>"; };
 		994151962651E7D0006F2607 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		99E8B70E2654750C009672E5 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		99E8B71026547710009672E5 /* SecurityTipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityTipsViewController.swift; sourceTree = "<group>"; };
@@ -107,17 +105,13 @@
 		9941515D2651AF43006F2607 /* SuperSenha */ = {
 			isa = PBXGroup;
 			children = (
-				994151912651B0E5006F2607 /* DicasSenha.txt */,
 				9941515E2651AF43006F2607 /* AppDelegate.swift */,
 				994151602651AF43006F2607 /* SceneDelegate.swift */,
-				994151622651AF43006F2607 /* ViewController.swift */,
-				99E8B70E2654750C009672E5 /* PasswordViewController.swift */,
-				994151642651AF43006F2607 /* Main.storyboard */,
-				99E8B71026547710009672E5 /* SecurityTipsViewController.swift */,
+				99981A032654A64B008412A3 /* Controllers */,
+				99981A042654A66C008412A3 /* Views */,
+				99981A052654A692008412A3 /* Model */,
 				994151672651AF44006F2607 /* Assets.xcassets */,
-				994151962651E7D0006F2607 /* Launch Screen.storyboard */,
 				9941516C2651AF44006F2607 /* Info.plist */,
-				99E8B712265477C0009672E5 /* PasswordGenerator.swift */,
 			);
 			path = SuperSenha;
 			sourceTree = "<group>";
@@ -138,6 +132,33 @@
 				994151822651AF45006F2607 /* Info.plist */,
 			);
 			path = SuperSenhaUITests;
+			sourceTree = "<group>";
+		};
+		99981A032654A64B008412A3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				99E8B71026547710009672E5 /* SecurityTipsViewController.swift */,
+				994151622651AF43006F2607 /* ViewController.swift */,
+				99E8B70E2654750C009672E5 /* PasswordViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		99981A042654A66C008412A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				994151642651AF43006F2607 /* Main.storyboard */,
+				994151962651E7D0006F2607 /* Launch Screen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		99981A052654A692008412A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				99E8B712265477C0009672E5 /* PasswordGenerator.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,7 +267,6 @@
 				994151682651AF44006F2607 /* Assets.xcassets in Resources */,
 				994151662651AF43006F2607 /* Main.storyboard in Resources */,
 				994151972651E7D0006F2607 /* Launch Screen.storyboard in Resources */,
-				994151922651B0E6006F2607 /* DicasSenha.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
