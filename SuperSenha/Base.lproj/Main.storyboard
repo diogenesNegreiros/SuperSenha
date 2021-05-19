@@ -135,10 +135,15 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="E3t-g8-7Q3">
                                 <rect key="frame" x="68" y="493" width="184" height="55"/>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="rx6-Ma-7KM">
+                                <rect key="frame" x="150" y="424" width="20" height="20"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="rx6-Ma-7KM" firstAttribute="centerY" secondItem="6eD-1m-4Sy" secondAttribute="centerY" id="6rE-1G-kbQ"/>
                             <constraint firstItem="N8R-za-dCE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8Hw-H9-5KP"/>
                             <constraint firstItem="N8R-za-dCE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="9KA-Yg-vs6"/>
                             <constraint firstItem="E3t-g8-7Q3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="9fl-Hg-nqR"/>
@@ -146,6 +151,7 @@
                             <constraint firstItem="E3t-g8-7Q3" firstAttribute="top" secondItem="6eD-1m-4Sy" secondAttribute="bottom" constant="37" id="Pcy-21-aXw"/>
                             <constraint firstItem="6eD-1m-4Sy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="ZX4-6g-VqK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E3t-g8-7Q3" secondAttribute="bottom" constant="20" id="e4U-CD-VOx"/>
+                            <constraint firstItem="rx6-Ma-7KM" firstAttribute="centerX" secondItem="6eD-1m-4Sy" secondAttribute="centerX" id="eHr-ee-y39"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6eD-1m-4Sy" secondAttribute="trailing" constant="24" id="fm9-UM-cAt"/>
                             <constraint firstItem="6eD-1m-4Sy" firstAttribute="top" secondItem="N8R-za-dCE" secondAttribute="bottom" constant="31" id="pKP-E5-0mK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E3t-g8-7Q3" secondAttribute="trailing" constant="68" id="z2j-fP-VeA"/>
@@ -153,6 +159,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Gerador de Senhas" id="jXu-Zu-znu"/>
                     <connections>
+                        <outlet property="generateIndicator" destination="rx6-Ma-7KM" id="L9o-kj-5xq"/>
                         <outlet property="lbTotalCaracters" destination="xSH-By-UpD" id="1Th-6b-7Gy"/>
                         <outlet property="lbTotalPasswords" destination="27l-eu-nUj" id="Y2M-ua-tjv"/>
                         <outlet property="swEspecialCaracters" destination="F6F-zm-etK" id="fCp-wo-g1m"/>

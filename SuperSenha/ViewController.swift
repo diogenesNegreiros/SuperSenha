@@ -8,18 +8,42 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
+    
     @IBOutlet weak var lbTotalPasswords: UITextField!
     @IBOutlet weak var lbTotalCaracters: UITextField!
     @IBOutlet weak var swUperLetters: UISwitch!
     @IBOutlet weak var swLowerLetters: UISwitch!
     @IBOutlet weak var swNumbers: UISwitch!
     @IBOutlet weak var swEspecialCaracters: UISwitch!
+    @IBOutlet weak var generateIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.configNavigationBar()
         lbTotalPasswords.inputAccessoryView = createToolBar()
         lbTotalCaracters.inputAccessoryView = createToolBar()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       
+        let passwordViewController = segue.destination as! PasswordViewController
+        
+        if let numberOfCaracters = Int(lbTotalCaracters.text!) {
+            passwordViewController.numberOfCaracters = numberOfCaracters
+        }
+        
+        if let numberOfPasswords = Int(lbTotalPasswords.text!) {
+            passwordViewController.numberOfPasswords = numberOfPasswords
+        }
+        
+        passwordViewController.useNumbers = swNumbers.isOn
+        passwordViewController.useLowerLetters = swLowerLetters.isOn
+        passwordViewController.useUperLetters = swUperLetters.isOn
+        passwordViewController.useEspecialCaracters = swEspecialCaracters.isOn
+        
+        view.endEditing(true)
+        generateIndicator.stopAnimating()
     }
     
     func configNavigationBar() {
